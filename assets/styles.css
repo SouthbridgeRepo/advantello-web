@@ -4,6 +4,10 @@
    ========================================================================== */
 
 /* Global Typography, Mobile Overflow Prevention & Font Smoothing */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   overflow-x: hidden;
   max-width: 100%;
@@ -19,7 +23,7 @@ body {
 .hero-banner-bg {
   background-image: 
     linear-gradient(to right, rgb(6, 19, 41) 0%, rgba(6, 19, 41, 0.92) 40%, rgba(6, 19, 41, 0.50) 62%, rgba(6, 19, 41, 0.08) 100%), 
-    url('image/hero-image.jfif');
+    url('image/hero-image-main.jfif');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;

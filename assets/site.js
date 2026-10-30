@@ -90,3 +90,27 @@ if ('IntersectionObserver' in window) {
     revealObserver.observe(el);
   });
 }
+
+// Floating Back to Top Button
+const backToTopBtn = document.getElementById('backToTopBtn');
+if (backToTopBtn) {
+  function updateBackToTopVisibility() {
+    if (window.scrollY > 350) {
+      backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+      backToTopBtn.classList.add('opacity-100', 'translate-y-0');
+    } else {
+      backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+      backToTopBtn.classList.remove('opacity-100', 'translate-y-0');
+    }
+  }
+
+  backToTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  window.addEventListener('scroll', updateBackToTopVisibility, { passive: true });
+  updateBackToTopVisibility();
+}
