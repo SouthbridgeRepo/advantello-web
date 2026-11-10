@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 180" width="100%" height="100%">
+  <!-- Transparent Outer Background -->
+
+  <!-- Diamond Icon -->
+  <g transform="translate(90, 90) rotate(-45)">
+    <!-- Slightly Darker Grey Inner Square (increases contrast so the center pops) -->
+    <rect x="-54" y="-54" width="108" height="108" fill="#D0D3D6" />
+
+    <!-- Solid Pure White Center Square (maximum brightness) -->
+    <rect x="-14" y="-14" width="28" height="28" fill="#FFFFFF" />
+
+    <!-- Top-Left Border (Blue) -->
+    <rect x="-54" y="-62" width="116" height="8" fill="#009FE3" />
+
+    <!-- Top-Right Border (Orange) -->
+    <rect x="54" y="-54" width="8" height="116" fill="#F27E21" />
+
+    <!-- Bottom-Right Border (Red) -->
+    <rect x="-62" y="54" width="116" height="8" fill="#E62429" />
+
+    <!-- Bottom-Left Border (Green) -->
+    <rect x="-62" y="-62" width="8" height="116" fill="#00A651" />
+  </g>
+
+  <!-- Text: Advantello Cloud -->
+  <text x="195" y="132" font-family="&#39;Segoe UI&#39;, &#39;Helvetica Neue&#39;, Arial, sans-serif" font-size="112" fill="#7E8083">
+    <tspan font-weight="700" letter-spacing="-1.5">Advantello</tspan><tspan dx="12" font-weight="400" letter-spacing="-1">Cloud</tspan>
+  </text>
+</svg>
